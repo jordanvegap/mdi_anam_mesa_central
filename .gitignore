@@ -50,7 +50,7 @@ Thumbs.db
 
 # Dev
 utils/Apis.js
-utils/Apis.min.js
+# utils/Apis.min.js
 utils/__utils.js
 utils/NotaInteresanteDateAddFunction.js
 TEMPLATES_CORREOS/
