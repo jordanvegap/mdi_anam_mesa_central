@@ -1,0 +1,104 @@
+/* preloader */
+#preloader {
+    position: fixed;
+    top:0; left:0;
+    right:0; bottom:0;
+    background: #fff;
+    /*background: url(../images/pattern_40.gif);*/
+    z-index: 3000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #loader {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+  }
+  @keyframes loader {
+    0% { left: -100px }
+    100% { left: 110%; }
+  }
+  #box {
+    width: 50px;
+    height: 50px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3019+0,cf0404+100;Red+3D */
+  background: rgb(255,48,25); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(255,48,25,1) 0%, rgba(207,4,4,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    animation: animate .5s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+  }
+  @keyframes animate {
+    17% { border-bottom-right-radius: 3px; }
+    25% { transform: translateY(9px) rotate(22.5deg); }
+    50% {
+      transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+      border-bottom-right-radius: 40px;
+    }
+    75% { transform: translateY(9px) rotate(67.5deg); }
+    100% { transform: translateY(0) rotate(90deg); }
+  }
+  #shadow {
+    width: 50px;
+    height: 5px;
+    background: #000;
+    opacity:0.5;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow .5s linear infinite;
+  }
+  
+  #txt_EstatusSession_new{
+    width: 120px;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+    top: 25px;
+    right: -180px;
+    position: absolute;
+    border: 0px solid red;
+  }
+
+  #TitlePlat{
+    position: absolute; width: 60px; height: 18px; 
+            text-align: center; color: #FFFFFF; font-weight: bold;
+            top: 23px;left: -7px;
+  }
+  @keyframes shadow {
+    50% {
+      transform: scale(1.2,1);
+    }
+  }
+  
+
+#Logo_Des_Preload{
+    position: absolute; width: 200px; height: 100px; 
+        border: solid red 0px; z-index: 4000; top: 50px; 
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto; left: 0; right: 0;
+}
+
+
+.dx-toast-custom {
+  background-color: #F05B41;
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-style {
+  margin-top: 3px;
+}
+

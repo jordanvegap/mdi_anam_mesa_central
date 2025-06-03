@@ -1,0 +1,15 @@
+
+{
+    "agenciab12": { "__Clave_Empresa": "AGENCIAB", "__Logotipo_Empresa": "AGENCIAB12", "url": "https://apidna.dnasystem.io", "ptr": ":2002" },
+    "bentoint": { "__Clave_Empresa": "BENTOINT", "__Logotipo_Empresa": "BENTOINT", "url": "https://apidna.dnasystem.io", "ptr": ":2001" },
+    "comdata": { "__Clave_Empresa": "COMDATA", "__Logotipo_Empresa": "COMDATA", "url": "https://botskonecta.dnasystem.io", "ptr": "" },
+    "concentra": { "__Clave_Empresa": "CONCENTRA", "__Logotipo_Empresa": "CONCENTRA", "url": "https://apioracle.dnasystem.io", "ptr": "" },
+    "creamedic": { "__Clave_Empresa": "CREAMEDIC", "__Logotipo_Empresa": "CREAMEDIC", "url": "https://apioracle.dnasystem.io", "ptr": "" },
+    "fm": { "__Clave_Empresa": "DNASYS.OCI", "__Logotipo_Empresa": "DNA", "url": "https://apioracle.dnasystem.io", "ptr": "" },
+    "inttegra": { "__Clave_Empresa": "INTTEGRA", "__Logotipo_Empresa": "INTTEGRA", "url": "https://apioracle.dnasystem.io", "ptr": "" },
+    "konecta": { "__Clave_Empresa": "BCONNECT", "__Logotipo_Empresa": "KONECTA", "url": "https://botskonecta.dnasystem.io", "ptr": "" },
+    "konectaco": { "__Clave_Empresa": "DNA.ORACLE", "__Logotipo_Empresa": "SURA", "url": "https://suraco.dnasystem.io", "ptr": ":2001" },
+    "mercedesbenz": { "__Clave_Empresa": "BCONNECT", "__Logotipo_Empresa": "MERCEDESBENZ", "url": "https://botskonecta.dnasystem.io", "ptr": "" },
+    "sura": { "__Logotipo_Empresa": "SURA", "__Clave_Empresa": "BCONNECT", "url": "https://botskonecta.dnasystem.io", "ptr": ""  },
+    "suraco": { "__Logotipo_Empresa": "SURA", "__Clave_Empresa": "DNA.ORACLE", "url": "https://botskonecta.dnasystem.io", "ptr": ""  }
+}

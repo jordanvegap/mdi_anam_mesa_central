@@ -1,0 +1,9 @@
+let dictionary = {
+    "es": {
+
+    },
+    
+    "en": {
+
+    }
+}

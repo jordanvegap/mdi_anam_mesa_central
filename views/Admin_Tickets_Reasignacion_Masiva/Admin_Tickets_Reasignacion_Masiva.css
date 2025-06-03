@@ -1,0 +1,133 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+.FlexContainer-Row{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid blue 0px;
+    position: relative;
+}
+
+.FlexContainer-Column{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid red 0px;
+}
+
+
+.heading_InnerFrm h2 {
+    border: 0 red solid;
+    font-size: 12px;
+    border-radius: 4px 4px 0px 0px;
+    background: #204566;
+    color: #fff;
+    padding: 4px;
+    margin: 0;
+}
+
+
+img.tabicon{
+    height: 22px;
+    margin-right: 5px;
+}
+
+
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab {
+    text-align: left;
+    padding-right: 10px;
+}
+  
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab.dx-tab-selected {
+    background: #204566;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px double #fff;
+}
+  
+.dx-tabpanel.dx-state-focused > .dx-tabpanel-tabs .dx-tab.dx-tab-selected .dx-tab-content,
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab.dx-tab-selected .dx-tab-content {
+    color: #fff;
+}
+
+.dx-popup-title.dx-toolbar {
+    background: #204566;
+    color: #fff;
+}
+
+.dx-popup-title.dx-toolbar .dx-toolbar-label > div {
+    font-size: 12px !important;
+}
+
+.dx-popup-title .dx-closebutton .dx-icon {
+    color: #fff;
+}
+
+
+img.listicon{
+    height: 22px;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+
+.dx-treeview-item-without-checkbox.dx-state-focused > .dx-treeview-item {
+    background-color: #204566;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.dx-context-menu.dx-overlay-content {
+    border: 1px solid #20456678;
+    border-radius: 6px;
+}
+
+.dx-context-menu .dx-submenu {
+    box-shadow: 0px 0px 8px rgb(0 0 0);
+    border-radius: 6px;
+}
+
+.item_context_menu {
+    width: 100%;
+    color: #404040;
+    font-weight: 500;
+    border: solid 0.15em #d5d5d5;
+    border-radius: 5px;
+}
+
+
+.item_context_menu:hover {
+    background: #337ab7;
+    color: #fff;
+}
+
+
+.dx-context-menu .dx-menu-items-container {
+    padding: 0px; 
+}
+
+.dx-menu-base .dx-menu-item-content {
+    padding: 2px 2px 0px;
+}

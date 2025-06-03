@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+     <meta name="viewport" content="width=device-width">
+    <head>
+        <link rel="stylesheet" type="text/css" href="../../src/bootstrap/css/bootstrap.min.css?v=1.0.0.0"  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="../../src/bootstrap/css/font-awesome.min.css?v=1.0.0.0"/>
+        <link rel="stylesheet" type="text/css" href="../../src/dxtreme/22.2.4/css/dx.common.css?v=1.0.0.0"/>
+        <link rel="stylesheet" type="text/css" href="../../src/dxtreme/22.2.4/css/dx.generic.customclasic_v3.css?v=1.0.0.0"/>
+        <link rel="stylesheet" type="text/css" href="../../styles/dna.mdi.call.center.min.css?v=1.0.0.0"/>
+        <link rel="stylesheet" type="text/css" href="../../styles/PreloadBox.css"/>
+        <script type="text/javascript" src="../../src/jQuery/jquery-3.6.0.min.js"> </script>
+        <script type="text/javascript" src="../../src/bootstrap/js/bootstrap.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/dx.all.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/event.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/unresolved.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/currency.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/date.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/message.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/number.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/localization/dx.messages.es.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/localization/dx.messages.en.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/supplemental.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/supplemental.v1.js"> </script>
+        <script type="text/javascript" src="../../src/extralibs/jslinq.js"> </script>
+                       
+    </head>
+<body>
+    <!--POP-->
+    <div id="loadPanel"></div>
+
+    <div id="Dialog_Orden_Trabajo"></div>
+    <div id="Dialog_Ticket"></div>
+    <div id="Pop_Busqueda_Fecha_Ot"></div>
+    <div id="Pop_Busqueda_No_Ot"></div>
+    
+    <div id="Pop_Open_Ot" style="display: flex; flex-direction: row;">
+        <iframe id="Mod_Embebed_Ot" width="100%" height="100%" scrolling="yes" frameBorder="0" style=" flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></iframe>
+    </div>
+    
+    
+    <!--POP-->
+
+    
+    <div id="splashscreen" class="FlexContainer-Column">
+        <div id="preloader" style="display: block;">
+            <div id="loader">
+            <div id="shadow"></div>
+            <div id="box"></div>
+            <div id="TitlePlat">ANAM</div>
+            <div id="txt_EstatusSession_new">Cargando Pantalla...</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="FlexContainer-Row" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0; ">
+        <div class="FlexContainer-Column container-shadow" style="width: 225px;overflow: hidden;">
+            <div class='heading_InnerFrm'><h2 id="adm_title_ms">Filtro Ordenes de trabajo</h2></div>
+            <div id="__tree_Ot_ADmin" style="padding: 5px;"></div>
+            
+        </div>
+
+        <div class="FlexContainer-Column container-shadow" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; overflow: hidden;">
+            <div class="container-fluid" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; overflow: hidden;">
+                <div class="row" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; overflow: hidden; height: 100%;">
+                    <div id="Mod_Tab_Reporte_OT" style="width: 100%; height: 100%; ">
+                        <div class="FlexContainer-Column" style="overflow: auto; width: 100%; height: 100%;" data-options="dxTemplate : { name: 'tab_gridGeneral' } ">
+                            <div id="Data_Grid_Ot_Admin"  style="width: 100%; height: 100%; "></div> 
+                        </div>
+                        <div class="FlexContainer-Column" style="overflow: auto; width: 100%; height: 100%;" data-options="dxTemplate : { name: 'tab_cubo' } ">
+                            <div id="PivotDG_Orden_Admin" style="width: 100%; height: 100%; "></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+                       
+        </div>
+    </div>
+
+    <script src="../../src/exceljs/4.1.1/exceljs.min.js"></script>
+    <script src="../../src/filesaver/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../../utils/Apis.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="../../utils/tools.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="../../utils/__utils.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="../../utils/DefaultLibs.js?v=1.0.0.0"></script>
+    <script type="text/javascript" src="../../utils/moment.js?v=1.0.0.0"></script>
+    <script type="text/javascript" src="../../utils/moment.tz.js?v=1.0.0.0"></script>
+   
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var $d = ""; if (DeveloperType == "Produccion") {$d = ".compiled"} else {$d = ".dev"}; var Local =  "AdminOts";
+            var cssFilesArrLocal = ["./"+Local+".css"];
+            var jsFilesArrLocal = ["./"+Local+"_Dictionary.js","./"+Local+$d+".js"];
+            setTimeout(() => {
+                css(cssFilesArrLocal);
+                js(jsFilesArrLocal);
+            }, 3000);
+        });
+    </script>  
+
+</body>
+</html>

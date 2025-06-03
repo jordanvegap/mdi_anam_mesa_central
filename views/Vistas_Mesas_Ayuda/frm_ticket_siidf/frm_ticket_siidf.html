@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <head>
+        <style>
+            #splashscreen {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #ffffff;
+                z-index: 500;
+            }
+
+            .dx-item-content.dx-menu-item-content span.icon{
+                display: inline-block;
+                width: 29px;
+                height: 18px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        </style>
+    
+        <link rel="stylesheet" type="text/css" href="../../../src/bootstrap/css/bootstrap.min.css?v=1.0.0.0"  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="../../../src/bootstrap/css/font-awesome.min.css?v=1.0.0.0"/>
+        <link rel="stylesheet" type="text/css" href="../../../src/dxtreme/22.2.4/css/dx.common.css?v=1.0.0.0"/>
+        <link rel="stylesheet" type="text/css" href="../../../src/dxtreme/22.2.4/css/dx.generic.customclasic_v3.css?v=1.0.0.0"/>
+        <link rel="stylesheet" type="text/css" href="../../../styles/dna.mdi.call.center.min.css?v=1.0.0.0"/>
+        <link rel="stylesheet" type="text/css" href="../../../styles/PreloadBox.css"/>
+        <script src="https://unpkg.com/devextreme-quill@1.6.2/dist/dx-quill.min.js"></script>
+        <script type="text/javascript" src="../../../src/jQuery/jquery-3.6.0.min.js"> </script>
+        <script type="text/javascript" src="../../../src/bootstrap/js/bootstrap.min.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/dx.all.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/cldr.min.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/cldr/event.min.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/cldr/unresolved.min.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/globalize.min.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/globalize/currency.min.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/globalize/date.min.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/globalize/message.min.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/globalize/number.min.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/localization/dx.messages.es.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/localization/dx.messages.en.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/cldr/supplemental.min.js"> </script>
+        <script type="text/javascript" src="../../../src/dxtreme/22.2.4/js/cldr/supplemental.v1.js"> </script>
+        <script type="text/javascript" src="../../../src/extralibs/jslinq.js"> </script>
+        <script type="text/javascript" src="../../../src/socket_io/2.3.0/socket.io.min.js"> </script>
+        <script type="text/javascript" src="../../../src/pdf/generate/jspdf.js"> </script>
+        <script type="text/javascript" src="../../../src/pdf/generate/jspdftable.js"> </script>
+        <script type="text/javascript" src="../../../src/pdf/show/pdf.js"> </script>
+        <script type="text/javascript" src="../../../src/pdf/show/pdf.worker.js"> </script>
+        <script type="text/javascript" src="../../../src/pdf/show/viewer.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    </head>
+<body>
+    <div class="myPopover" id="Pop_Notificacion_Success"></div>
+
+
+    <div id="Pop_Open_Ot_desde_ticket" style="display: flex; flex-direction: row;">
+        <iframe id="Mod_Embebed_Ot_desde_ticket" width="100%" height="100%" scrolling="yes" frameBorder="0" style=" flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></iframe>
+    </div>
+
+    <div id="Pop_CrearVerRespuesta"></div>
+    <div id="Pop_Insertar_BitacoraManual"></div>
+    <div id="Pop_Upload_Foto_Ticket"></div>
+    <div id="Pop_Califica_Ticket_Solicitante"></div>
+    
+    <div id="splashscreen" class="FlexContainer-Column">
+        <div id="preloader" style="display: block;">
+            <div id="loader">
+            <div id="shadow"></div>
+            <div id="box"></div>
+            <div id="TitlePlat">ANAM</div>
+            <div id="txt_EstatusSession_new">Cargando Pantalla...</div>
+            </div>
+        </div>
+    </div>
+    <div id="loadPanel"></div>
+
+    <div id="LoadEnvioCorreo"></div>
+    <div class="FlexContainer-Column" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;">
+        <div class="FlexContainer-Column" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;">
+            <div id="___Tb_Tickets" style="position: relative;padding: 5px;" ></div>
+            <div id="Tab_Panel_Ticket_Detalle" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; overflow: auto; background-color: #fafafa;">
+                <div style="display: inline-flex;" data-options="dxTemplate : { name: 'tab_frmticketservicio' } ">
+                    <div id="__Frm_Ticket_Servicio" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; overflow: auto; padding: 9px;"></div>
+                </div>
+                <div style="display: inline-flex;" data-options="dxTemplate : { name: 'tab_bitacoras' } ">
+                    <div class="FlexContainer-Column" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;">
+                        <div id="Frm_Btn_AgregarBitacora" style="width: 100%; padding: 5px;"></div>
+                        <div id="Dg_Bitacora_Ticket" style="height: 100%;"></div>
+                    </div>
+                </div>
+                <div style="display: inline-flex;" data-options="dxTemplate : { name: 'tab_RepFotograf' } ">
+                    <div class="FlexContainer-Row" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;">
+                        <div class="FlexContainer-Column" style="position: relative;width: 290px;">
+                            <div class="heading_InnerFrm" style="margin: 5px;"><h2>*Solo se admiten imagenes</h2></div>
+                            <div id="fUploadImageToTicket" style="width: 100%;"></div>
+                            <div id="Form_Btn_Cargar_Imagen_Sistema" style="width: 100%; padding: 5px;"></div>
+                        </div>
+                        
+                        <div id="Dg_RepFoto_Ticket" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></div>
+                    </div>
+                </div>
+                <div style="display: inline-flex;" data-options="dxTemplate : { name: 'tab_DocumentosTk' } ">
+                    <div class="FlexContainer-Row" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;">
+                        <div class="FlexContainer-Column" style="position: relative;width: 290px;">
+                            <div id="documentsUploadToTicket" style="width: 100%;"></div>
+                            <div id="Form_Btn_Agregar_Documento" style="width: 100%; padding: 5px;"></div>
+                            <div class="heading_InnerFrm" style="margin: 5px;"><h2>Tipos de documentos permitidos:</h2></div>
+                            <div class="container-shadow-mdi" id="lista-archivos-permitidos" style="border-radius: 9px; margin: 5px; padding-top: 15px;"></div>
+                        </div>
+                        
+                        <div id="Dg_Documento_Ticket" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></div>
+                    </div>
+
+
+                    <!-- <div class="FlexContainer-Column" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;">
+                        <div id="Form_Btn_Agregar_Documento" style="width: 100%; padding: 5px;"></div>
+                        <div id="Dg_Documento_Ticket" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></div>
+                    </div> -->
+                </div>
+                <div style="display: inline-flex;" data-options="dxTemplate : { name: 'tab_ListaOts' } ">
+                    <div class="FlexContainer-Column" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;">
+                        <div id="Form_Btn_Alta_Ticket_Ot" style="width: 100%; padding: 5px;"></div>
+                        <div id="Dg_Ot_Ticket_rel" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></div>
+                    </div>
+                </div>
+                <div style="display: inline-flex;" data-options="dxTemplate : { name: 'tab_AutorizacionesTicket' } ">
+                    <div class="FlexContainer-Row" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;">
+                        <div id="Form_Btn_Alta_Autorizacion" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></div>
+                        <div id="Dg_Ticket_Autorizaciones" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></div>
+                    </div>
+                </div>
+                <div style="display: inline-flex;"  data-options="dxTemplate : { name: 'tab_respuestas_rapidas' } ">
+                    <div class="FlexContainer-Column" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;">
+                        <div id="Form_Btn_Agregar_Mensaje" style="width: 100%;padding: 5px;"></div>
+                        <div id="Dg_MensajesClienteOperador" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; height: 200px;"></div>
+                    </div>
+                </div>
+                <div style="display: inline-flex;"  data-options="dxTemplate : { name: 'tab_plantillas' } ">
+                    <div id="Dg_Plantillas_Respuestas" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></div>
+                </div>
+
+                <div style="display: inline-flex;"  data-options="dxTemplate : { name: 'tab_add_empleados' } ">
+                    <div id="Dg_Empleados_Ticket" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></div>
+                </div>
+
+                <div style="display: inline-flex;"  data-options="dxTemplate : { name: 'tab_participantes' } ">
+                    <div id="Dg_Ticket_Participantes" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></div>
+                </div>
+                <div style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; " data-options="dxTemplate : { name: 'tab_Empleado_Solicita' } ">
+                    <div id="__Frm_Ticket_Empleado_Solicita" style="position: relative;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; overflow: auto; padding: 9px;"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../utils/Apis.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="../../../utils/tools.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="../../../utils/__utils.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="../../../utils/DefaultLibs.js?v=1.0.0.0"></script>
+    <script type="text/javascript" src="../../../utils/moment.js?v=1.0.0.0"></script>
+    <script type="text/javascript" src="../../../utils/moment.tz.js?v=1.0.0.0"></script>
+    <script type="text/javascript" src="../../../src/socket_io/2.3.0/socket.io.min.js"></script>
+    
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var $d = ""; if (DeveloperType == "Produccion") {$d = ".compiled"} else {$d = ".dev"}; var Local =  "frm_ticket_siidf";
+            var cssFilesArrLocal = ["./"+Local+".css"];
+            var jsFilesArrLocal = ["./"+Local+"_Dictionary.js","./"+Local+$d+".js"];
+            setTimeout(() => {
+                css(cssFilesArrLocal);
+                js(jsFilesArrLocal);
+            }, 3000);
+        });
+    </script>  
+
+</body>
+</html>

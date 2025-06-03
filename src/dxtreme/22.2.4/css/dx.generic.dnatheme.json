@@ -1,0 +1,26 @@
+{
+    "items": [
+        {
+            "key": "$base-accent",
+            "value": "rgba(0, 92, 173, 1)"
+        },
+        {
+            "key": "$pivotgrid-area-color",
+            "value": "rgba(0, 52, 92, 1)"
+        },
+        {
+            "key": "$form-field-item-color",
+            "value": "rgba(0, 63, 99, 1)"
+        },
+        {
+            "key": "$base-label-color",
+            "value": "rgba(0, 58, 99, 1)"
+        }
+    ],
+    "baseTheme": "generic.light.compact",
+    "outputColorScheme": "dnatheme",
+    "makeSwatch": false,
+    "version": "22.2.4",
+    "widgets": [],
+    "removeExternalResources": false
+}

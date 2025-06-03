@@ -1,0 +1,173 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e9edf1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+.FlexContainer-Row{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid blue 0px;
+    position: relative;
+}
+.FlexContainer-Column{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid red 0px;
+}
+
+
+.frmCls{
+    padding: 9px;
+}
+
+
+
+.bullet-container {
+    position: relative;
+}
+
+.bullet-text {
+    position: absolute;
+    height: 25px;
+    width: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.heading_InnerFrmForms{
+    border-radius: 5px;
+    border: solid 1px #204566;
+    padding: 1px 2px;
+}
+
+.heading_InnerFrmForms .div__img img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+
+.button_vacante > .dx-button > .dx-button-content > img.dx-icon {
+    height: 48px;
+    width: 48px;
+}
+
+.heading_InnerFrmForms h2 {
+    padding: 6px;
+}
+
+
+.form-avatar {
+    background-image: none;
+    background: #ffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.border_conteiner_empleado{
+    margin-top: 3px;
+    box-shadow: 0px 0px 2px #000000ab;
+    border-radius: 4px;
+    padding: 8px;
+    padding-top: 5px !important;
+    padding-bottom: 6px;
+}
+
+
+#dxFrmDetEmp .dx-layout-manager .dx-tabpanel .dx-multiview-item-content {
+    padding: 6px;
+}
+
+
+
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab {
+    width: 1000px;
+}
+
+
+
+
+.dx-treelist-content .dx-treelist-table {
+    background: #eee;
+    background: -moz-linear-gradient(top,#eee 0,#eee 100%);
+    background: -webkit-linear-gradient(top,#eee 0,#eee 100%);
+    background: linear-gradient(to bottom,#eee 0,#eee 100%);
+    font-weight: 600;
+    color: #011f39;
+}
+
+
+.img-treeview-icons {
+    margin-right: 2px;
+}
+
+
+.name-treeview-icons {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+}
+
+.dx-treelist-rowsview .dx-treelist-empty-space {
+    width: 10px;
+}
+
+#carga_imagen_empleado .dx-fileuploader-input-wrapper{
+    padding: 0px;
+}
+
+#carga_imagen_empleado .dx-fileuploader-wrapper{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#carga_imagen_empleado .dx-fileuploader-input-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#carga_imagen_empleado .dx-fileuploader-input-wrapper .dx-button {
+    width: 100%;
+}
+
+
+#carga_imagen_empleado  .dx-fileuploader-files-container {
+    width: 100%;
+    padding: 0px 0px 0;
+}
+
+#TreeDocumentosEmpleado .dx-toolbar-center{
+    width: 100%;
+}

@@ -1,0 +1,49 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+.FlexContainer-Row{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid blue 0px;
+    position: relative;
+}
+
+.FlexContainer-Column{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid red 0px;
+}
+
+
+.heading_InnerFrm h2 {
+    border: 0 red solid;
+    font-size: 11px;
+    border-radius: 4px 4px 0px 0px;
+    background: #204566;
+    color: #fff;
+    padding: 4px;
+    margin: 0;
+}

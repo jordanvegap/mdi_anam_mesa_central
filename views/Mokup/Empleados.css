@@ -1,0 +1,22 @@
+.FlexContainer-Row{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid blue 0px;
+    position: relative;
+}
+.FlexContainer-Column{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid red 0px;
+}
+.frmCls{
+    padding: 9px;
+}

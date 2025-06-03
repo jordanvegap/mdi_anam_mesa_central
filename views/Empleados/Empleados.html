@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #splashscreen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #ffffff;
+            z-index: 500;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../../src/bootstrap/css/bootstrap.min.css?v=1.0.0.0"  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="../../src/bootstrap/css/font-awesome.min.css?v=1.0.0.0"/>
+    <link rel="stylesheet" type="text/css" href="../../src/dxtreme/22.2.4/css/dx.common.css?v=1.0.0.0"/>
+    <link rel="stylesheet" type="text/css" href="../../src/dxtreme/22.2.4/css/dx.generic.customclasic_v3.css?v=1.0.0.0"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/dna.mdi.call.center.min.css?v=1.0.0.0"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/PreloadBox.css"/>
+    <script type="text/javascript" src="../../src/jQuery/jquery-3.6.0.min.js"> </script>
+    <script type="text/javascript" src="../../src/bootstrap/js/bootstrap.min.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/dx.all.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr.min.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/event.min.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/unresolved.min.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize.min.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/currency.min.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/date.min.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/message.min.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/number.min.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/localization/dx.messages.es.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/localization/dx.messages.en.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/supplemental.min.js"> </script>
+    <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/supplemental.v1.js"> </script>
+    <script type="text/javascript" src="../../src/extralibs/jslinq.js"> </script>
+    
+</head>
+<body>
+    
+    <div id="splashscreen" class="FlexContainer-Column">
+        <div id="preloader" style="display: block;">
+            <div id="loader">
+            <div id="shadow"></div>
+            <div id="box"></div>
+            <div id="TitlePlat">ANAM</div>
+            <div id="txt_EstatusSession_new">Cargando Pantalla...</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="Pop_Busqueda_Empleado" style="display: flex; flex-direction: row; background-color: #f5f5f5"></div>
+    <div id="Pop_Gd_DocXCamp" style="display: flex; flex-direction: row; background-color: #f5f5f5"></div>
+    <div id="Pop_Puestos_Ant" style="display: flex; flex-direction: row; background-color: #f5f5f5"></div>
+    <div id="Pop_Campa_Emp" style="display: flex; flex-direction: row; background-color: #f5f5f5"></div>
+    <div id="Pop_GD_General" style="display: flex; flex-direction: row; background-color: #f5f5f5"></div>
+
+    <div id="Pop_Busqueda_Empleados" style="background-color: #f5f5f5;"></div>
+    <div id="Pop_Detalle_Documento" style="background-color: #f5f5f5;"></div>
+
+    <div id="Pop_Informacion_Escolaridad" style="background-color: #f5f5f5;"></div>
+
+    <div id="Pop_DataGrid_Vacantes" style="background-color: #f5f5f5;"></div>
+    <div id="Pop_Confirma_Cambio_Vacantes" style="background-color: #f5f5f5;"></div>
+    <div id="Pop_Confirma_Baja_Vacantes" style="background-color: #f5f5f5;"></div>
+
+    <div id="Pop_Colonias_Codigo_Postal" style="background-color: #f5f5f5;"></div>
+    
+    <!--Tooltips-->
+    <div id="tooltip_btn_rfc" class="FlexContainer-Column" style="position: absolute;" >
+        <div class="FlexContainer-Row" style="height: 100px; width: 230px;  ">
+            <div class="FlexContainer-Column" style="position: relative; flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;overflow: hidden; padding: 3px;">
+                <div class="FlexContainer-Row" style="height: 100%; position: relative;">
+
+                    <div class="FlexContainer-Column" style="position: relative; flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;overflow: hidden; padding: 5px;">
+                        <img src="images/AsisVritual_Info.svg" style="width: 100%;" >
+                    </div>
+                    <div class="FlexContainer-Column" style="position: relative; flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 2;overflow: hidden; padding: 5px;">
+                        <p style="text-align: left; width: 100%; margin-bottom: 3px; white-space: normal;">
+                            <b>Genere el RFC a partir de los siguientes datos:</b>
+                        </p>
+                        <ul style="text-align: left; padding-left: 15px;">
+                            <li>Nombre(s)</li>
+                            <li>Apellido Paterno</li>
+                            <li>Apellido Materno</li>
+                            <li>Fecha de Nacimiento</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tooltip_btn_select_vacante" class="FlexContainer-Column" style="position: absolute;" >
+        <div class="FlexContainer-Row" style="height: 95px; width: 320px;  ">
+            <div class="FlexContainer-Column" style="position: relative; flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;overflow: hidden; padding: 3px;">
+                <div class="FlexContainer-Row" style="height: 100%; position: relative;">
+
+                    <div class="FlexContainer-Column" style="position: relative; flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;overflow: hidden; padding: 5px;">
+                        <img src="images/AsisVritual_Info.svg" style="width: 100%;" >
+                    </div>
+                    <div class="FlexContainer-Column" style="position: relative; flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 4;overflow: hidden; padding: 5px;">
+                        <p style="text-align: left; width: 100%; margin-bottom: 10px; white-space: normal;">
+                            Asigne rápidamente una vacante del headcount autorizado seleccionando la posición que coincida con el perfil del empleado desde una lista.
+                        </p>
+                        <p style="text-align: left; width: 100%; margin-bottom: 3px; white-space: normal;">
+                            <b>Nota:</b> Antes de seleccionar una vacante el empleado debe ser dado de alta en el sistema.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Tooltips-->
+
+    <div id="loadPanel"></div>
+
+
+    <div class="FlexContainer-Column" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0; background-color: #f5f5f5;">
+        <div class="FlexContainer-Row" style="height: 100%; position: relative;">
+            <div class="FlexContainer-Column" style="position: relative; flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 3;overflow: hidden;">
+
+                <div class="FlexContainer-Row" style="height: 48px; align-items: center; justify-content: center;">
+                    <div class="FlexContainer-Column" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0; padding: 6px 6px 6px 6px;">
+                        <div id="___Tab_Empleados" style="padding: 6px 5px 7px 5px; background-color: #f5f5f5; box-shadow: 0px 0px 2px #000000ab; border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <div class="FlexContainer-Row" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; align-items: center; justify-content: center;">
+                    <div class="FlexContainer-Column" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0; padding: 0px 2px 0px 6px;">
+                        <div id="dxFrmDetEmp" style="background-color: #f5f5f5; overflow-y: auto; padding:0px 4px; padding-bottom: 15px;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="FlexContainer-Column container-shadow" style="position: relative; flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 2;overflow: hidden;">
+
+               
+
+                <div class="FlexContainer-Row" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; align-items: center; justify-content: center;">
+                    <div class="FlexContainer-Column" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;">
+                        
+                        <div id="TabPanelEmpleadoExtra" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; min-height: 200px; background: #ffffff;">
+
+                            <div class="FlexContainer-Column" style="overflow: auto; width: 100%; height: 100%;" data-options="dxTemplate : { name: 'tab_miMenu' } ">
+                                <div id="BtnsAcciones" style="padding: 9px;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; width: 100%;"></div>
+                            </div>
+                            <!-- <div class="FlexContainer-Column" style="overflow: auto; width: 100%; height: 100%;" data-options="dxTemplate : { name: 'tab_EmDocumentos' } ">
+                                <div id="TreeDocumentosEmpleado" style="padding: 5px;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; width: 100%;"></div>
+                            </div>
+                            <div class="FlexContainer-Column" style="overflow: auto; width: 100%; height: 100%;" data-options="dxTemplate : { name: 'tab_EmProceso' } ">
+                                <div id="DataGridProcesoEmpleado" style="padding: 5px;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; width: 100%;"></div>
+                            </div>
+                            <div class="FlexContainer-Column" style="overflow: auto; width: 100%; height: 100%;" data-options="dxTemplate : { name: 'tab_EmpEstudios' } ">
+                                <div id="DataGridEstudiosEmpleado" style="padding: 5px;flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; width: 100%;"></div>
+                            </div> -->
+                            
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="../../utils/Apis.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="../../utils/tools.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="../../utils/__utils.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="../../utils/DefaultLibs.js?v=1.0.0.0"></script>
+    <script type="text/javascript" src="../../utils/moment.js?v=1.0.0.0"></script>
+    <script type="text/javascript" src="../../utils/moment.tz.js?v=1.0.0.0"></script>
+    <script src="../../modulo_crypto/crypto-js/crypto-js.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var $d = ""; if (DeveloperType == "Produccion") {$d = ".compiled"} else {$d = ".dev"}; var Local = "Empleados";
+            var cssFilesArrLocal = ["./"+Local+".css"];
+            var jsFilesArrLocal = ["./"+Local+"_Dictionary.js","./"+Local+$d+".js"];
+            setTimeout(() => {
+                js(jsFilesArrLocal);
+                css(cssFilesArrLocal);
+            }, 3000);
+        });
+    </script>  
+
+</body>
+</html>

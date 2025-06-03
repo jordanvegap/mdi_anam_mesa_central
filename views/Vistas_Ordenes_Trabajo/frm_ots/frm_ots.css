@@ -1,0 +1,300 @@
+body{
+  overflow: scroll;
+  min-height: 850px;
+}
+.FlexContainer-Row{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid blue 0px;
+    position: relative;
+}
+.FlexContainer-Column{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid red 0px;
+}
+.frmCls{
+    padding: 9px;
+}
+
+.bg-gradient-blue2{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#499bea+0,207ce5+100;Blue+3d+%237 */
+    background: #499bea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #499bea 0%, #207ce5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #499bea 0%,#207ce5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #499bea 0%,#207ce5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
+}
+
+.bg-gradient-gray{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.hidden_box{
+    display: none;
+}
+.myPopover .dx-popup-content {  
+    padding: 0;  
+} 
+
+.popup-property-details{
+    background: #204566 !important;  
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.popup-property-details .content{
+    background: #fff !important;
+    color: #204566;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 9px; display: flex; flex-direction: column; justify-content: center; align-items: center;
+    border-bottom: #204566 9px solid;
+  }
+  #Tab-Pnt-Requis-Personal .dx-tab-content .navIcon{
+    width: 16px;
+    height: 16px;
+}
+#Tab-Pnt-Requis-Personal .dx-tab-content span{
+    position: relative;
+    height: 18px;
+}
+
+#Tab-Pnt-Requis-Personal .dx-tab {
+    width: auto;
+    min-width: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: #b8b8b8 solid 1px;
+    border-left: #b8b8b8 solid 1px;
+    border-right: #b8b8b8 solid 1px;
+    border-radius: 2px;
+}
+
+#Tab-Pnt-Requis-Personal .form-avatar {
+    height: 170px;
+    width: 100%;
+    border: 1px solid #d2d3d5;
+    background-image: url('./images/Icons/TrailerVectorFrontal.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.50);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.50);
+    background-color: #ffffff;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+}
+
+#Tab-Pnt-Requis-Personal .TVIzquierdo {
+    height: 170px;
+    width: 100%;
+    border: 1px solid #d2d3d5;
+    background-image: url('./images/Icons/TrailerVectorIzq.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.50);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.50);
+    background-color: #ffffff;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+}
+
+
+
+
+
+.dropzone-external {
+    width: 100%;
+    height: 100px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fafcff+0,f2f7ff+100 */
+    background: rgb(250,252,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(250,252,255,1) 0%, rgba(242,247,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(250,252,255,1) 0%,rgba(242,247,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(250,252,255,1) 0%,rgba(242,247,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafcff', endColorstr='#f2f7ff',GradientType=0 ); /* IE6-9 */
+    border-radius: 9px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #a9b2cc;
+    padding: 10px;
+    margin: 9px auto;
+    position: relative;
+  }
+  .dropzone-external > * {
+    pointer-events: none;
+  }
+  .dropzone-external.dropzone-active {
+    border-style: solid;
+  }
+  .widget-container > span {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .dropzone-image {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  .dropzone-text{
+    text-align: center;
+  }
+  .dropzone-text > span {
+    font-size: 12px;
+  }
+  .dropzone-text > img{
+    width: 80px;
+  }
+  .upload-progress {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-box-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .preview-lg {
+    height: 9rem;
+    width: 16rem;
+  }
+  
+  .preview-md {
+    height: 4.5rem;
+    width: 8rem;
+  }
+  
+  .preview-sm {
+    height: 2.25rem;
+    width: 4rem;
+  }
+  
+  .preview-xs {
+    height: 1.125rem;
+    margin-right: 0;
+    width: 2rem;
+  }
+  
+  .img-container,
+  .img-preview {
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+  }
+  .img-preview.cropped_result{
+    max-height: 497px;
+    min-height: 200px;
+  }
+  .img-preview.cropped_result > img {
+    max-width: 100%;
+  }
+  .img-container {
+    max-height: 497px;
+    min-height: 200px;
+  }
+  
+  @media (min-width: 768px) {
+    .img-container {
+      min-height: 497px;
+    }
+  }
+  
+  .img-container > img {
+    max-width: 100%;
+  }
+  
+  .container-shadow-mdi{
+    -webkit-box-shadow:inset 0px 0px 3px 0px rgba(0,0,0,0.5), 0 2px 3px rgba(34, 25, 25, 0.5);
+    -moz-box-shadow:inset 0px 0px 3px 0px rgba(0,0,0,0.5), 0 2px 3px rgba(34, 25, 25, 0.5);
+    box-shadow:inset 0px 0px 3px 0px rgba(0,0,0,0.5), 0 2px 3px rgba(34, 25, 25, 0.5);
+  }
+  
+  #crop_button{
+    width: 100%; 
+    height: 35px;
+    line-height: 35px;
+    border-radius: 9px;
+    border: solid 1px #a9b2cc;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+  background: rgb(238,238,238); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+  
+  }
+  .uplcontentsuccess img{
+    width:100%;
+    height: 100%;
+  }
+  
+  
+  .signature-pad {
+    flex: 1;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 13px;
+    width: 100%;
+    height: 250px;
+  }
+  .signature-pad--body {
+    position: relative;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: 1px solid #f4f4f4;
+  }
+  
+  
+  .signature-pad--body canvas {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+  }
+  
+  .signature-pad--footer {
+    color: #333333;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 8px;
+  }

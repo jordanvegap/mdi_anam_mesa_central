@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <title>DNA</title>
+        <style>
+
+            #splashscreen {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #ffffff;
+                z-index: 500;
+            }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="../../src/bootstrap/css/bootstrap.min.css?v=4.2.0.8"  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="../../src/bootstrap/css/font-awesome.min.css?v=4.2.0.8"/>
+        <link rel="stylesheet" type="text/css" href="../../src/dxtreme/22.2.4/css/dx.common.css?v=4.2.0.8"/>
+        <link rel="stylesheet" type="text/css" href="../../src/dxtreme/22.2.4/css/dx.generic.customclasic_v3.css?v=4.2.0.8"/>
+        <link rel="stylesheet" type="text/css" href="../../styles/dna.mdi.call.center.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../../styles/PreloadBox.css"/>
+        <script type="text/javascript" src="../../src/jQuery/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../../src/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../src/dxtreme/21.2.4/js/jszip.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/dx-quill.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/dx.all.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/event.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/unresolved.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/currency.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/date.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/message.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/globalize/number.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/localization/dx.messages.es.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/localization/dx.messages.en.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/supplemental.min.js"> </script>
+        <script type="text/javascript" src="../../src/dxtreme/22.2.4/js/cldr/supplemental.v1.js"> </script>
+        <script type="text/javascript" src="../../src/extralibs/jslinq.js"> </script>
+        <script type="text/javascript" src="../../utils/moment.js"> </script>
+        <script type="text/javascript" src="../../utils/moment.tz.js"> </script>
+
+    </head>
+
+
+    <body>
+
+        <div id="loadPanel"></div>
+
+        <div id="Popup_Reasignar_Ticket"></div>
+        <div id="Context_Menu_Asignacion_Tikets"></div>
+
+        <div id="Pop_Mesa_Ayuda_Config" style="display: flex; flex-direction: row;"></div>
+
+        <div id="splashscreen" class="FlexContainer-Column">
+            <div id="preloader" style="display: block;">
+                <div id="loader">
+                <div id="shadow"></div>
+                <div id="box"></div>
+                <div id="TitlePlat"> </div>
+                <div id="txt_EstatusSession_new">Cargando Pantalla...</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="FlexContainer-Column" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;">
+            <div class="FlexContainer-Row" style="height: 100%; position: relative;">
+
+                <div class="FlexContainer-Column container-shadow" style="position: relative; flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 2;overflow: hidden;">
+
+                    <div class="FlexContainer-Row" style="height: 24px; align-items: center; justify-content: center;">
+                        <div class="FlexContainer-Column" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;">
+                            <div class='heading_InnerFrm' style="margin-top: 0px; width: 100%;"><h2 style="padding-top: 6px"><span id="label_title_mesas">&nbsp;</span></h2></div>
+                        </div>
+                    </div>
+
+                    <div class="FlexContainer-Row" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; align-items: center; justify-content: center;">
+                        <div class="FlexContainer-Column" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;">
+                            <div id="__TreeView_Mesas_De_Ayuda" style="width: 100%; height: 100%; padding-right: 10px; padding-top: 5px;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="FlexContainer-Column container-shadow" style="position: relative; flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 9;overflow: hidden;">
+
+                    <div class="FlexContainer-Row" style="height: 24px; align-items: center; justify-content: center;">
+                        <div class="FlexContainer-Column" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;">
+                            <div class='heading_InnerFrm' style="margin-top: 0px; width: 100%;"><h2 style="padding-top: 7px"><span id="label_title_tickets">&nbsp;</span></h2></div>
+                        </div>
+                    </div>
+
+                    <div class="FlexContainer-Row" style="flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1; align-items: center; justify-content: center;">
+                        <div class="FlexContainer-Column" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;">
+                            <div id="__DataGrid_Asignacion_Tikets" style="width: 100%; height: 100%; padding-top: 5px; "></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <script type="text/javascript" src="../../utils/Apis.min.js?v=4.2.0.1"> </script>
+        <script type="text/javascript" src="../../utils/tools.min.js?v=4.2.0.1"> </script>
+        <script type="text/javascript" src="../../utils/__utils.min.js?v=4.2.0.1"> </script>
+        <script type="text/javascript" src="../../utils/DefaultLibs.js?v=4.2.0.1"></script>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(event) {
+                var $d = ""; if (DeveloperType == "Produccion") {$d = ".compiled"} else {$d = ".dev"}; var Local =  "Admin_Tickets_Reasignacion_Masiva";
+                var cssFilesArrLocal = ["./"+Local+".css"];
+                var jsFilesArrLocal = ["./"+Local+"_Dictionary.js","./"+Local+$d+".js"];
+                setTimeout(() => {
+                    js(jsFilesArrLocal);
+                    css(cssFilesArrLocal);
+                }, 3000);
+            });
+        </script>
+    </body>
+</html>

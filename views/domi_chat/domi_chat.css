@@ -1,0 +1,26 @@
+@keyframes dna-fade-animation {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.dna-chat-btn span,.dna-user-conversations>li>[data-count] {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: #ca3434;
+    color: #fff;
+    border-radius: 100%;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 22px;
+    top: 0;
+    left: -3px;
+    z-index: 2;
+    animation: dna-fade-animation 0.3s
+}

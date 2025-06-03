@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <title>ANAM ::: Mesa central</title>
+    <link rel="stylesheet" type="text/css" href="./src/bootstrap/css/bootstrap.min.css?v=1.0.0.0"  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="./src/bootstrap/css/font-awesome.min.css?v=1.0.0.0"/>
+    <link rel="stylesheet" type="text/css" href="./src/fancybox/jquery.fancybox.min.css?v=1.0.0.0"/>
+    <link rel="stylesheet" type="text/css" href="./src/dxtreme/22.2.4/css/dx.common.css?v=1.0.0.0"/>
+    <link rel="stylesheet" type="text/css" href="./src/dxtreme/22.2.4/css/dx.generic.customclasic_v3.css?v=1.0.0.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/dna.mdi.call.center.min.css?v=1.0.0.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/mnu.min.css?v=1.0.0.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/PreloadBox.css"/>
+</head>
+
+<body class="dx-viewport">
+    <audio id="sonidoNotificacion" src="utils/NotifiSounds/greanpatch-166007.mp3" preload="auto"></audio>
+    <div id="splashscreen">
+        <div id="Logo_Des_Preload"></div>
+
+        <div id="preloader" style="display: block;">
+            <div id="loader">
+            <div id="shadow"></div>
+            <div id="box"></div>
+            <div id="TitlePlat">ANAM</div>
+            <div id="txt_EstatusSession_new">Cargando Sistema...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-mdi">
+        <img id="Logo_Des_mini" style="height: 35px;" alt="">
+        
+        <div class="header-mdi-text">
+            <div class="header-mdi-text-inner" id="VersionCode" style="text-align: left; margin-left: 10px;"></div>
+            
+            <div class="header-mdi-text-inner">
+                <span  id="date"></span>
+                <span id="clock"></span>
+            </div>
+            <div class="header-mdi-text-inner" id="NombreEmpleado" style="text-align: right; margin-right: 15px;"></div>
+        </div>
+        <div id="selectBox" style="margin-right: 5px; display: none;"></div>
+        <span style="margin-right: 5px;" id="btnVerErrores">  </span>
+        <span style="margin-right: 5px;" id="btnMenuGeneral">  </span>
+        <div style="margin-right: 5px;"  id="btnFinalizar"></div>
+    </div>
+    <div id="drawer" style="position: relative; flex-grow: 1; display: flex; background-color: #ffffff; overflow: hidden;">
+        <div style="background-color: #ffffff; flex-grow: 1; position: absolute; left: 0; right: 0; margin: 0; top: 0; bottom: 0;" id="Mdi__T__Panel"></div>
+    </div>
+    <div class="screen-size"></div>
+    <div id="popup"></div>
+    <div id="PanleLoadWindow"></div>        
+
+    
+
+    <script type="text/javascript" src="./src/jQuery/jquery-3.6.0.min.js"> </script>
+    <script type="text/javascript" src="./src/bootstrap/js/bootstrap.min.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/dx.all.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/cldr.min.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/cldr/event.min.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/cldr/unresolved.min.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/globalize.min.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/globalize/currency.min.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/globalize/date.min.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/globalize/message.min.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/globalize/number.min.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/localization/dx.messages.es.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/localization/dx.messages.en.js"> </script>
+    <script type="text/javascript" src="./src/extralibs/jslinq.js"> </script>
+    <script type="text/javascript" src="utils/Apis.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="utils/tools.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="utils/__utils.min.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/cldr/supplemental.min.js"> </script>
+    <script type="text/javascript" src="./src/dxtreme/22.2.4/js/cldr/supplemental.v1.js"> </script>
+    <script type="text/javascript" src="utils/moment.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="utils/moment.tz.js?v=1.0.0.0"> </script>
+    <script src="views/MDI/dictionary_locales.js?v=1.0.0.0" type="text/javascript"></script>
+    <script type="text/javascript" src="utils/erroresDB.js?v=1.0.0.0"> </script>
+    <script type="text/javascript" src="views/MDI/MDI.compiled.js?v=1.0.0.0"></script>
+
+    
+</body>
+</html>

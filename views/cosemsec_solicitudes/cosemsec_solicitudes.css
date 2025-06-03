@@ -1,0 +1,176 @@
+#splashscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 500;
+}
+
+.field_separator{
+    border-radius: 5px;
+    border: solid 1px #000;
+}
+
+.tipifica_icon{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.label_tipifica{
+    display: inline-block;
+    font-weight: 700;
+    padding: 0px 10px;
+
+}
+
+img.navIcon{
+    height: 14px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.dx-label{
+    max-width: 100% !important;
+}
+
+
+.menu_item{
+    padding-left: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.menu_item.MYUSER{
+    background-image: url(images/Icons/user_green.png);
+}
+.menu_item.MTA{
+    background-image: url(images/Icons/Asignados.png);
+}
+.menu_item.MTG{
+    background-image: url(images/Icons/Generados.png);
+}
+.menu_item.TODAS{
+    background-image: url(images/Icons/database.png);
+}
+.menu_item.SEARCH{
+    background-image: url(images/Icons/seasrchicon.png);
+}
+.menu_item.ABIERTAS{
+    background-image: url(images/Icons/Abiertos.png);
+}
+.menu_item.SINASIG{
+    background-image: url(images/Icons/SinAtencion.png);
+}
+.menu_item.XAUT{
+    background-image: url(images/Icons/key.png);
+}
+.menu_item.CANCAUTO{
+    background-image: url(images/Icons/AutorizadoCancelados.png);
+}
+
+
+
+.menu_item.ADD{
+    background-image: url(../../images/Icons/icono_30.png);
+}
+
+.menu_item.FOLDER{
+    background-image: url(../../images/Icons/21.png);
+}
+
+.menu_item.SERVICIO{
+    background-image: url(../../images/Icons/Card-file-icon64.png);
+}
+
+.menu_item.USER{
+    background-image: url(../../images/Icons/icono_30.png);
+}
+.menu_item.SEARCH{
+    background-image: url(../../images/Icons/seasrchicon.png);
+}
+
+.menu_item.CERRADAS{
+    background-image: url(../../images/Icons/Folder-Accept128.png);
+}
+.menu_item.PROCESO{
+    background-image: url(images/Icons/Proceso.png);
+}
+.menu_item.SEVERIDAD{
+    background-image: url(images/Icons/Severidad.png);
+}
+.menu_item.PRIORIDAD{
+    background-image: url(images/Icons/Prioridad.png);
+}
+.menu_item.ESTATUS,
+.menu_item.ITEMSEVERIDAD,
+.menu_item.ITEMPRIORIDAD{
+    background-image: url(../../images/Icons/11.png);
+}
+
+.btn-no-margin-top{
+    margin-top: -14px;
+}
+.display_nome{
+    display: none;
+}
+
+
+.FlexContainer-Row{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid blue 0px;
+    position: relative;
+}
+.FlexContainer-Column{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid red 0px;
+}
+.frmCls {
+    padding: 5px;
+}
+
+.dx-popup-wrapper > .dx-overlay-content {
+    background-color: #f5f5f5;
+}
+
+
+.dx-tooltip-wrapper .dx-overlay-content .dx-popup-content {
+    border: #204566 solid 3px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.dx-tooltip-wrapper.dx-popover-wrapper .dx-popover-arrow::after {
+    background-color: #204566;
+}
+
+.dx-popup-title.dx-toolbar {
+    background: #204566;
+    color: #ffffff;
+}
+.dx-popup-title.dx-toolbar .dx-toolbar-label > div{
+    font-size: 12px;
+}
+
+.dx-popup-title.dx-toolbar .dx-closebutton .dx-icon-close::before {
+    color: #ffffff;
+}
+
+.dx-overlay-content.dx-popup-normal.dx-popup-draggable >
+.dx-popup-content {
+    border: solid 3px #204566;
+}

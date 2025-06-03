@@ -1,0 +1,182 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+.FlexContainer-Row{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid blue 0px;
+    position: relative;
+}
+
+.FlexContainer-Column{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: solid red 0px;
+}
+
+
+.heading_InnerFrm h2 {
+    border: 0 red solid;
+    font-size: 11px;
+    border-radius: 4px 4px 0px 0px;
+    background: #204566;
+    color: #fff;
+    padding: 4px;
+    margin: 0;
+}
+
+
+img.tabicon{
+    height: 16px;
+    margin-right: 8px;
+    margin-top: -6px;
+}
+
+
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab {
+    text-align: left;
+    padding-right: 10px;
+    width: 1000px;
+}
+  
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab.dx-tab-selected {
+    background: #204566;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px double #fff;
+}
+  
+.dx-tabpanel.dx-state-focused > .dx-tabpanel-tabs .dx-tab.dx-tab-selected .dx-tab-content,
+.dx-tabpanel > .dx-tabpanel-tabs .dx-tab.dx-tab-selected .dx-tab-content {
+    color: #fff;
+}
+
+.label_field_no_form {
+    color: #003f63;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: -6px;
+}
+
+
+.dx-radiobutton-icon:before {
+    width: 15px;
+    height: 15px;
+}
+
+.dx-radiobutton .dx-item-content {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.dx-radiobutton-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.dx-radiobutton-icon-checked .dx-radiobutton-icon-dot {
+    margin-top: -13px;
+    margin-left: 3px;
+    width: 9px;
+    height: 9px;
+}
+
+.dx-radiogroup-horizontal .dx-radiobutton {
+    margin-top: 0px;
+}
+
+.no_padddin_top{
+    padding-top: 0px !important;
+}
+
+.no_padddin_top_radio{
+    padding-top: 10px !important;
+}
+
+
+.dx-radio-value-container {
+    padding-right: 2px;
+}
+
+.dx-radiobutton-icon {
+    width: 12px;
+    height: 12px;
+}
+
+
+.dx-radiobutton-icon:before {
+    width: 10px;
+    height: 10px;
+}
+
+.dx-radiobutton-icon-checked .dx-radiobutton-icon-dot {
+    margin-top: -10px;
+    margin-left: 2px;
+    width: 8px;
+    height: 8px;
+}
+
+.dx-texteditor-input {
+    font-size: 9px;
+    min-height: 20px;
+    padding: 5px 5px 1px;
+}
+
+.dx-radiogroup-horizontal .dx-radiobutton {
+    margin-right: 12px;
+}
+
+.dx-toolbar-label .dx-toolbar-item-content > div {
+    font-size: 12px;
+}
+
+.btn_down{
+    margin-top: -18px;
+}
+
+.dx-radiogroup .dx-radiobutton-icon {
+    margin: 2px 1px;
+}
+
+
+
+
+.dx-popup-title.dx-toolbar {
+    background: #204566;
+    color: #ffffff;
+}
+.dx-popup-title.dx-toolbar .dx-toolbar-label > div{
+    font-size: 12px;
+}
+
+.dx-popup-title.dx-toolbar .dx-closebutton .dx-icon-close::before {
+    color: #ffffff;
+}
+
+.dx-overlay-content.dx-popup-normal >
+.dx-popup-content {
+    border: solid 3px #204566;
+}
