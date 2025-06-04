@@ -1755,7 +1755,7 @@ SalesDashboard.dashboardModel = function() {
                         +"&CSC_MESA="+CSC_MESA
                         +"&TK_ID="+TICKET_NEW_ID
                         +"&TPO_USUARIO="+self.TipoUsuario;
-                        let UrlPop = "/"+self.patname.split('/')[1]+"/views/Vistas_Mesas_Ayuda/"+DataMesa.CAM_MESA_IFRAMEWEB+"/"+DataMesa.CAM_MESA_IFRAMEWEB+".html?"+extraVars;
+                        let UrlPop = "/"+self.patname.split('/')[1]+"/Vistas_Mesas_Ayuda/"+DataMesa.CAM_MESA_IFRAMEWEB+"/"+DataMesa.CAM_MESA_IFRAMEWEB+".html?"+extraVars;
                         const popupContentTemplate = function (container) {
                             return $('<div style="height:100%;">').append(
                                 '<iframe src='+UrlPop+' width="100%" height="100%" scrolling="auto" frameBorder="0" style=" flex-shrink: 1;flex-basis: auto;flex: 1; flex-grow: 1;"></iframe>'
